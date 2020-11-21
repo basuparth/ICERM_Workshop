@@ -1,0 +1,10 @@
+few
+pyFLUX
+pyFundamentalFrequencies
+pyInterp2DAmplitude
+pyParameterMap
+pyPn5
+pySpinWeightedSpherHarm
+pycpuAAK
+pyinterp_cpu
+pymatmul_cpu
