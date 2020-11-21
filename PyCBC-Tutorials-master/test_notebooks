@@ -1,0 +1,11 @@
+#!/bin/bash
+set -e
+for not in tutorial/*.ipynb examples/*.ipynb; do
+     echo $not
+     pushd `dirname ${not}`
+     jupyter nbconvert \
+              --ExecutePreprocessor.timeout=1500 \
+              --ExecutePreprocessor.kernel_name="python" \
+              --to notebook --inplace --execute `basename ${not}`
+     popd
+done
